@@ -123,9 +123,13 @@ set undodir=~/.vim/undodir
 
 
 " Set the map leader
-"let mapleader = "\<space>"
-nnoremap <silent> <Space>ll :w 
-nnoremap <silent> <Space>ll :VimtexCompile <CR>&
+let mapleader = "\<space>"
+
+
+syntax enable
+
+"nnoremap <silent> <Space>ll :w 
+nnoremap <silent> <Space>ll :VimtexCompile <CR>
 
 " j/k will move virtual lines (lines that wrap)
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
